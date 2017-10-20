@@ -31,5 +31,16 @@ class StorageController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func storeList(_ sender: Any) {
+    }
+    
+    @IBAction func storeSingle(_ sender: Any) {
+    }
+    
+    @IBAction func readList(_ sender: Any) {
+    }
+    
+    @IBAction func readSingle(_ sender: Any) {
+    }
+    
 }

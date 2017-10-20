@@ -31,5 +31,19 @@ class ListController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    @IBAction func creatItems(_ sender: Any) {
+    }
+    
+    @IBAction func createLotsItems(_ sender: Any) {
+    }
+    
+    @IBAction func append(_ sender: Any) {
+    }
+    
+    @IBAction func update(_ sender: Any) {
+    }
+    
+    @IBAction func clear(_ sender: Any) {
+    }
 }

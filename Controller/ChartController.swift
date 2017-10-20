@@ -32,4 +32,7 @@ class ChartController: UIViewController {
     }
     */
 
+    @IBAction func render(_ sender: Any) {
+    }
+    
 }

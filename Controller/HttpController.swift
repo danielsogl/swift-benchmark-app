@@ -31,5 +31,16 @@ class HttpController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func getComments(_ sender: Any) {
+    }
+    
+    @IBAction func postComments(_ sender: Any) {
+    }
+    
+    @IBAction func putComments(_ sender: Any) {
+    }
+    
+    @IBAction func deleteComments(_ sender: Any) {
+    }
+    
 }
