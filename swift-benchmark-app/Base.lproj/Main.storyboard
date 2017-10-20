@@ -1,24 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fdx-Je-SxE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--List Benchmark-->
+        <scene sceneID="JNh-H8-b4R">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController title="List Benchmark" id="wN4-H5-c9e" customClass="ListController" customModule="swift_benchmark_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O3J-Z3-0fu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="RNC-cG-KTP"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0sa-hi-pwk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-439" y="-548"/>
+        </scene>
+        <!--HTTP Benchmark-->
+        <scene sceneID="IWR-df-URq">
+            <objects>
+                <viewController title="HTTP Benchmark" id="esI-Xc-xXx" customClass="HttpController" customModule="swift_benchmark_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aSc-rr-Vdy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0La-Yt-mo5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWx-2P-8di" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="-548"/>
+        </scene>
+        <!--Storage Benchmark-->
+        <scene sceneID="aIf-w1-zgf">
+            <objects>
+                <viewController title="Storage Benchmark" id="bel-Qh-Txp" customClass="StorageController" customModule="swift_benchmark_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hZF-Nu-Pgx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="l7B-eB-zVr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pmP-qA-JAm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="-548"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cUC-kO-svo">
+            <objects>
+                <navigationController id="fdx-Je-SxE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dnb-9w-fHW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9rJ-xS-Sot" kind="relationship" relationship="rootViewController" id="zyB-Pf-gku"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gzu-9l-UYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-438" y="139"/>
+        </scene>
+        <!--iOS Benchmark App-->
+        <scene sceneID="Gxo-eQ-PFl">
+            <objects>
+                <viewController id="9rJ-xS-Sot" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xnw-5h-DaS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE9-Vd-tFz">
+                                <rect key="frame" x="16" y="74" width="343" height="30"/>
+                                <state key="normal" title="List Benchmark"/>
+                                <connections>
+                                    <segue destination="wN4-H5-c9e" kind="show" id="dhG-fs-7YV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00s-LW-uTp">
+                                <rect key="frame" x="16" y="112" width="343" height="30"/>
+                                <state key="normal" title="HTTP Benchmark"/>
+                                <connections>
+                                    <segue destination="esI-Xc-xXx" kind="show" id="fKo-OA-9CH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfX-tL-Gbs">
+                                <rect key="frame" x="16" y="150" width="343" height="30"/>
+                                <state key="normal" title="Storage Benchmark"/>
+                                <connections>
+                                    <segue destination="bel-Qh-Txp" kind="show" id="JG9-iW-kKj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xte-TQ-oM4">
+                                <rect key="frame" x="16" y="188" width="343" height="30"/>
+                                <state key="normal" title="View Stack Benchmark"/>
+                                <connections>
+                                    <segue destination="zEp-GJ-Uf3" kind="show" id="7la-FI-MCs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmE-ZY-KBn">
+                                <rect key="frame" x="16" y="226" width="343" height="30"/>
+                                <state key="normal" title="Chart Benchmark"/>
+                                <connections>
+                                    <segue destination="ErV-vO-lbn" kind="show" id="iXh-Hs-T4k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="00s-LW-uTp" firstAttribute="leading" secondItem="pfX-tL-Gbs" secondAttribute="leading" id="6nL-To-pKs"/>
+                            <constraint firstItem="pfX-tL-Gbs" firstAttribute="leading" secondItem="xte-TQ-oM4" secondAttribute="leading" id="DLA-fJ-2JM"/>
+                            <constraint firstItem="bE9-Vd-tFz" firstAttribute="top" secondItem="QYY-vG-qFA" secondAttribute="top" constant="10" id="ESf-Sw-fVa"/>
+                            <constraint firstItem="bE9-Vd-tFz" firstAttribute="trailing" secondItem="Xnw-5h-DaS" secondAttribute="trailingMargin" id="TnO-59-Plk"/>
+                            <constraint firstItem="xte-TQ-oM4" firstAttribute="leading" secondItem="LmE-ZY-KBn" secondAttribute="leading" id="bB1-sg-cdD"/>
+                            <constraint firstItem="bE9-Vd-tFz" firstAttribute="leading" secondItem="Xnw-5h-DaS" secondAttribute="leadingMargin" id="bdH-Gy-EKU"/>
+                            <constraint firstItem="pfX-tL-Gbs" firstAttribute="top" secondItem="00s-LW-uTp" secondAttribute="bottom" constant="8" symbolic="YES" id="dEx-4m-mag"/>
+                            <constraint firstItem="bE9-Vd-tFz" firstAttribute="trailing" secondItem="00s-LW-uTp" secondAttribute="trailing" id="fq9-sy-s6s"/>
+                            <constraint firstItem="bE9-Vd-tFz" firstAttribute="leading" secondItem="00s-LW-uTp" secondAttribute="leading" id="kDb-1N-xjx"/>
+                            <constraint firstItem="00s-LW-uTp" firstAttribute="trailing" secondItem="pfX-tL-Gbs" secondAttribute="trailing" id="kSe-IH-1uZ"/>
+                            <constraint firstItem="LmE-ZY-KBn" firstAttribute="top" secondItem="xte-TQ-oM4" secondAttribute="bottom" constant="8" symbolic="YES" id="kp5-Hx-6tr"/>
+                            <constraint firstItem="xte-TQ-oM4" firstAttribute="trailing" secondItem="LmE-ZY-KBn" secondAttribute="trailing" id="l4x-w7-K2u"/>
+                            <constraint firstItem="pfX-tL-Gbs" firstAttribute="trailing" secondItem="xte-TQ-oM4" secondAttribute="trailing" id="oHy-QC-Awv"/>
+                            <constraint firstItem="00s-LW-uTp" firstAttribute="top" secondItem="bE9-Vd-tFz" secondAttribute="bottom" constant="8" symbolic="YES" id="pQ5-Yn-qtI"/>
+                            <constraint firstItem="xte-TQ-oM4" firstAttribute="top" secondItem="pfX-tL-Gbs" secondAttribute="bottom" constant="8" symbolic="YES" id="tpO-sb-VrU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QYY-vG-qFA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="iOS Benchmark App" id="ace-N3-erO">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="FBm-yH-OXF"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jvV-oj-MZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--View Stack Benchmark-->
+        <scene sceneID="xYe-Z2-GAn">
+            <objects>
+                <viewController title="View Stack Benchmark" id="zEp-GJ-Uf3" customClass="ViewStackController" customModule="swift_benchmark_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K6U-Go-4LC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cP1-rR-Qlw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZr-jI-ml9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="139"/>
+        </scene>
+        <!--Chart Benchmark-->
+        <scene sceneID="cRw-2F-hMR">
+            <objects>
+                <viewController title="Chart Benchmark" id="ErV-vO-lbn" customClass="ChartController" customModule="swift_benchmark_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UQ5-45-f9N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1xO-Gw-GZn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U20-mG-ikW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="797"/>
         </scene>
     </scenes>
 </document>

@@ -12,6 +12,11 @@
 		F634A6BF1F99F295002D9D44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F634A6BD1F99F295002D9D44 /* Main.storyboard */; };
 		F634A6C11F99F295002D9D44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F634A6C01F99F295002D9D44 /* Assets.xcassets */; };
 		F634A6C41F99F295002D9D44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F634A6C21F99F295002D9D44 /* LaunchScreen.storyboard */; };
+		F634A6CD1F99F598002D9D44 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634A6CC1F99F598002D9D44 /* ListController.swift */; };
+		F634A6CF1F99F5E1002D9D44 /* HttpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634A6CE1F99F5E1002D9D44 /* HttpController.swift */; };
+		F634A6D11F99F5F0002D9D44 /* StorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634A6D01F99F5F0002D9D44 /* StorageController.swift */; };
+		F634A6D31F99F602002D9D44 /* ViewStackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634A6D21F99F602002D9D44 /* ViewStackController.swift */; };
+		F634A6D51F99F615002D9D44 /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634A6D41F99F615002D9D44 /* ChartController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		F634A6C01F99F295002D9D44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F634A6C31F99F295002D9D44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F634A6C51F99F295002D9D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F634A6CC1F99F598002D9D44 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		F634A6CE1F99F5E1002D9D44 /* HttpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpController.swift; sourceTree = "<group>"; };
+		F634A6D01F99F5F0002D9D44 /* StorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageController.swift; sourceTree = "<group>"; };
+		F634A6D21F99F602002D9D44 /* ViewStackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStackController.swift; sourceTree = "<group>"; };
+		F634A6D41F99F615002D9D44 /* ChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,7 @@
 		F634A6AD1F99F295002D9D44 = {
 			isa = PBXGroup;
 			children = (
+				F634A6CB1F99F556002D9D44 /* Controller */,
 				F634A6B81F99F295002D9D44 /* swift-benchmark-app */,
 				F634A6B71F99F295002D9D44 /* Products */,
 			);
@@ -62,6 +73,18 @@
 				F634A6C51F99F295002D9D44 /* Info.plist */,
 			);
 			path = "swift-benchmark-app";
+			sourceTree = "<group>";
+		};
+		F634A6CB1F99F556002D9D44 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F634A6CC1F99F598002D9D44 /* ListController.swift */,
+				F634A6CE1F99F5E1002D9D44 /* HttpController.swift */,
+				F634A6D01F99F5F0002D9D44 /* StorageController.swift */,
+				F634A6D21F99F602002D9D44 /* ViewStackController.swift */,
+				F634A6D41F99F615002D9D44 /* ChartController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +160,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F634A6BC1F99F295002D9D44 /* ViewController.swift in Sources */,
+				F634A6D31F99F602002D9D44 /* ViewStackController.swift in Sources */,
 				F634A6BA1F99F295002D9D44 /* AppDelegate.swift in Sources */,
+				F634A6CD1F99F598002D9D44 /* ListController.swift in Sources */,
+				F634A6CF1F99F5E1002D9D44 /* HttpController.swift in Sources */,
+				F634A6D51F99F615002D9D44 /* ChartController.swift in Sources */,
+				F634A6D11F99F5F0002D9D44 /* StorageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9G42264X4W;
 				INFOPLIST_FILE = "swift-benchmark-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.danielsogl.swift-benchmark-app";
@@ -289,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9G42264X4W;
 				INFOPLIST_FILE = "swift-benchmark-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.danielsogl.swift-benchmark-app";
