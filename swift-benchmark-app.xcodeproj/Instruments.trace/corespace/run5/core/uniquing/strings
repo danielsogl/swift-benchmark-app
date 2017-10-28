@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string></string>
+	<string>Unknown</string>
+	<string>User</string>
+	<string>Supervisor</string>
+	<string>Running</string>
+	<string>Runnable</string>
+	<string>Blocked</string>
+	<string>Preempted</string>
+	<string>Uninterruptible</string>
+	<string>Suspended</string>
+	<string>Idle</string>
+	<string>Terminating</string>
+	<string>Terminated</string>
+	<string>TODO</string>
+	<string>Zero Fill</string>
+	<string>Page Cache Hit</string>
+	<string>Decompress Memory</string>
+	<string>File Backed Page In</string>
+	<string>Copy On Write</string>
+	<string>Page Out</string>
+	<string>Main Thread</string>
+	<string>_dispatch_worker_thread3</string>
+	<string>_dispatch_workloop_worker_thread$VARIANT$mp</string>
+	<string>JSC::initializeThreading</string>
+	<string>-[NSNotificationCenter postNotificationName:object:userInfo:]</string>
+	<string>_pthread_body</string>
+	<string>InitPthreadWrapper</string>
+	<string>pthread_exit</string>
+</array>
+</plist>

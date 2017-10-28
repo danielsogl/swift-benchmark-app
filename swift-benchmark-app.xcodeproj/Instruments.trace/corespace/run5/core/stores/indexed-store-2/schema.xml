@@ -1,0 +1,12 @@
+
+<schema name="virtual-memory" topology="XRTD50_CC22_R_TypeID">
+    <column engineeringType="XRStartTimeTypeID" engineeringName="Start Time" mnemonic="start" topologyField="XRTraceRelativeTimestampFieldID"></column>
+    <column engineeringType="XRDurationTypeID" engineeringName="Duration" mnemonic="duration" topologyField="XRDurationFieldID"></column>
+    <column engineeringType="XRThreadTypeID" engineeringName="Thread" mnemonic="thread" topologyField="XRCategory1FieldID"></column>
+    <column engineeringType="XRVMOperationNameTypeID" engineeringName="Operation" mnemonic="operation" topologyField="XRCategory2FieldID"></column>
+    <column engineeringType="XRDurationOnCPUTypeID" engineeringName="CPU Time" mnemonic="cputime"></column>
+    <column engineeringType="XRDurationWaitingTypeID" engineeringName="Wait Time" mnemonic="waittime"></column>
+    <column engineeringType="XRVirtualMemoryAddressTypeID" engineeringName="Address" mnemonic="address"></column>
+    <column engineeringType="XRSizeInBytesTypeID" engineeringName="Size" mnemonic="size"></column>
+    <column engineeringType="XRBacktraceTypeID" engineeringName="Stack" mnemonic="backtrace"></column>
+</schema>

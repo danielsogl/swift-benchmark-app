@@ -19,7 +19,6 @@
 		F634A6D31F99F602002D9D44 /* ViewStackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634A6D21F99F602002D9D44 /* ViewStackController.swift */; };
 		F634A6D51F99F615002D9D44 /* ChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634A6D41F99F615002D9D44 /* ChartController.swift */; };
 		F634A6DA1F99FF1A002D9D44 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634A6D91F99FF1A002D9D44 /* ListItem.swift */; };
-		F634A6DC1F9A0D94002D9D44 /* TableConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634A6DB1F9A0D94002D9D44 /* TableConroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +38,6 @@
 		F634A6D21F99F602002D9D44 /* ViewStackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStackController.swift; sourceTree = "<group>"; };
 		F634A6D41F99F615002D9D44 /* ChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartController.swift; sourceTree = "<group>"; };
 		F634A6D91F99FF1A002D9D44 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
-		F634A6DB1F9A0D94002D9D44 /* TableConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableConroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +102,6 @@
 				F634A6D01F99F5F0002D9D44 /* StorageController.swift */,
 				F634A6D21F99F602002D9D44 /* ViewStackController.swift */,
 				F634A6D41F99F615002D9D44 /* ChartController.swift */,
-				F634A6DB1F9A0D94002D9D44 /* TableConroller.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -222,10 +219,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-swift-benchmark-app/Pods-swift-benchmark-app-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -255,7 +254,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F634A6BC1F99F295002D9D44 /* ViewController.swift in Sources */,
-				F634A6DC1F9A0D94002D9D44 /* TableConroller.swift in Sources */,
 				F634A6D31F99F602002D9D44 /* ViewStackController.swift in Sources */,
 				F634A6BA1F99F295002D9D44 /* AppDelegate.swift in Sources */,
 				F634A6CD1F99F598002D9D44 /* ListController.swift in Sources */,

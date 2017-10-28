@@ -7,4 +7,5 @@ target 'swift-benchmark-app' do
 
   # Pods for swift-benchmark-app
   pod 'Alamofire', '~> 4.5'
+  pod 'Charts'
 end

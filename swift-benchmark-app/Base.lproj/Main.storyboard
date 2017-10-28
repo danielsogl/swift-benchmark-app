@@ -341,10 +341,18 @@
                                     <action selector="render:" destination="ErV-vO-lbn" eventType="touchUpInside" id="H8P-Va-7gR"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9kZ-Tw-yCb" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="102" width="375" height="565"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1xO-Gw-GZn"/>
                     </view>
+                    <connections>
+                        <outlet property="lineChart" destination="9kZ-Tw-yCb" id="XgZ-2n-CYp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U20-mG-ikW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
