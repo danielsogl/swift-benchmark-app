@@ -6,6 +6,6 @@ target 'swift-benchmark-app' do
   use_frameworks!
 
   # Pods for swift-benchmark-app
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 4.5'
   pod 'Charts'
 end

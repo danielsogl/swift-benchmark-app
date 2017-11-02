@@ -15,10 +15,15 @@ class ChartController: UIViewController {
 
     @IBOutlet weak var lineChart: LineChartView!
     
+    var valsComp1: [ChartDataEntry] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        for i in 0...1000 {
+            valsComp1.append(ChartDataEntry(x: Double(i), y: Double(randomNumber(min: 0, max: 500))))
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,12 +33,6 @@ class ChartController: UIViewController {
 
 
     @IBAction func render(_ sender: Any) {
-        
-        var valsComp1: [ChartDataEntry] = []
-        
-        for i in 0...500 {
-            valsComp1.append(ChartDataEntry(x: Double(i), y: Double(randomNumber(min: 0, max: 500))))
-        }
         
         var setComp1 = LineChartDataSet(values: valsComp1, label: "Data")
         

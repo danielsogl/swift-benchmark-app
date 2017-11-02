@@ -25,10 +25,12 @@ class HttpController: UIViewController {
     @IBAction func getComments(_ sender: Any) {
         var counter = 0
         let start = CACurrentMediaTime()
-        for i in 1...50 {
+        
+        for i in 1...100 {
             Alamofire.request("https://jsonplaceholder.typicode.com/comments/\(i)").responseJSON { response in
                     counter += 1
-                    if(counter == 50) {
+                print("GET finsihed")
+                    if(counter == 100) {
                         let end = CACurrentMediaTime()
                         print("GET finished in \(end-start)s")
                     }
@@ -39,7 +41,7 @@ class HttpController: UIViewController {
     @IBAction func postComments(_ sender: Any) {
         var counter = 0
         let start = CACurrentMediaTime()
-        for i in 1...50 {
+        for i in 1...100 {
             let parameters: Parameters = [
                 "id": i,
                 "name": "Lorem Ipsum",
@@ -49,7 +51,7 @@ class HttpController: UIViewController {
             
             Alamofire.request("https://httpbin.org/post", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
                 counter += 1
-                if(counter == 50) {
+                if(counter == 100) {
                     let end = CACurrentMediaTime()
                     print("POST finished in \(end-start)s")
                 }
@@ -60,7 +62,7 @@ class HttpController: UIViewController {
     @IBAction func putComments(_ sender: Any) {
         var counter = 0
         let start = CACurrentMediaTime()
-        for i in 1...50 {
+        for i in 1...100 {
             let parameters: Parameters = [
                 "id": i,
                 "name": "Lorem Ipsum",
@@ -70,7 +72,7 @@ class HttpController: UIViewController {
             
             Alamofire.request("https://httpbin.org/put", method: .put, parameters: parameters, encoding: JSONEncoding.default).responseJSON { response in
                 counter += 1
-                if(counter == 50) {
+                if(counter == 100) {
                     let end = CACurrentMediaTime()
                     print("PUT finished in \(end-start)s")
                 }
@@ -81,10 +83,10 @@ class HttpController: UIViewController {
     @IBAction func deleteComments(_ sender: Any) {
         var counter = 0
         let start = CACurrentMediaTime()
-        for i in 1...50 {
+        for i in 1...100 {
             Alamofire.request("https://jsonplaceholder.typicode.com/comments/\(i)", method: .delete).responseString { response in
                     counter += 1
-                    if(counter == 50) {
+                    if(counter == 100) {
                         let end = CACurrentMediaTime()
                         print("DELETE finished in \(end-start)s")
                     }
